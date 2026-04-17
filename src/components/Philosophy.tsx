@@ -61,8 +61,8 @@ export function Philosophy() {
 
             <div className="relative hidden lg:block">
               <img
-                src="https://cdn.poehali.dev/projects/532e329d-334e-43dc-8293-783ede525737/bucket/7f447326-0e7d-4894-b658-efd80bc37322.png"
-                alt="Свадебный декор — цветочные арки"
+                src="https://cdn.poehali.dev/projects/532e329d-334e-43dc-8293-783ede525737/bucket/6bc532fb-b8ec-4443-8420-08f6b0d7afe4.png"
+                alt="Свадебный декор — стол с цветами"
                 className="opacity-90 relative z-10 w-auto"
               />
             </div>
