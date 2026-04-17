@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const prices = [
@@ -43,9 +44,20 @@ export function Pricing() {
           ))}
         </div>
 
-        <p className="mt-10 text-muted-foreground text-sm leading-relaxed border-t border-border pt-8">
-          Прайс на различные услуги может обговариваться в личном порядке напрямую с менеджером проекта.
-        </p>
+        <div className="mt-10 border-t border-border pt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+          <p className="text-muted-foreground text-sm leading-relaxed max-w-md">
+            Прайс на различные услуги может обговариваться в личном порядке напрямую с менеджером проекта.
+          </p>
+          <a
+            href="https://t.me/Offerri"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-3 bg-foreground text-primary-foreground px-8 py-4 text-sm tracking-wide hover:bg-foreground/80 transition-colors duration-300 group shrink-0"
+          >
+            Обсудить стоимость
+            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+          </a>
+        </div>
       </div>
     </section>
   )
