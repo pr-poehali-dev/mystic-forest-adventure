@@ -4,11 +4,12 @@ import { ArrowUpRight } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "Корпоративный форум TechLeaders",
+    title: "Съёмки выпуска для футбольной команды PARI НН. Нижний Новгород. 2026.",
     category: "Корпоративное мероприятие",
-    location: "Москва",
-    year: "2024",
+    location: "Нижний Новгород",
+    year: "2026",
     image: "/images/hously-1.png",
+    link: "https://www.youtube.com/watch?v=p3noZvpbS14&t=74s",
   },
   {
     id: 2,
@@ -17,22 +18,25 @@ const projects = [
     location: "Москва",
     year: "2025",
     image: "https://cdn.poehali.dev/projects/532e329d-334e-43dc-8293-783ede525737/bucket/e9f0b4c3-17fc-4aea-870c-8f280dfd2718.png",
+    link: null,
   },
   {
     id: 3,
-    title: "Образовательный форум EdFuture",
+    title: "Образовательный форум \"Поволжские берега\". Нижний Новгород. 2025",
     category: "Образовательный форум",
-    location: "Санкт-Петербург",
-    year: "2023",
+    location: "Нижний Новгород",
+    year: "2025",
     image: "/images/hously-3.png",
+    link: "https://vk.com/p_berega",
   },
   {
     id: 4,
-    title: "Фотосессия в студии Bloom",
-    category: "Съёмка",
-    location: "Москва",
-    year: "2023",
+    title: "Застройка сцены ун. им. Н. И. Лобачевского. Нижний Новгород. 2026",
+    category: "Оформление",
+    location: "Нижний Новгород",
+    year: "2026",
     image: "/images/hously-4.png",
+    link: null,
   },
 ]
 
@@ -89,15 +93,27 @@ export function Projects() {
               onMouseLeave={() => setHoveredId(null)}
             >
               <div ref={(el) => (imageRefs.current[index] = el)} className="relative overflow-hidden aspect-[4/3] mb-6">
-                <img
-                  src={project.image || "/placeholder.svg"}
-                  alt={project.title}
-                  className={`w-full h-full object-cover transition-transform duration-700 ${
-                    hoveredId === project.id ? "scale-105" : "scale-100"
-                  }`}
-                />
+                {project.link ? (
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                    <img
+                      src={project.image || "/placeholder.svg"}
+                      alt={project.title}
+                      className={`w-full h-full object-cover transition-transform duration-700 ${
+                        hoveredId === project.id ? "scale-105" : "scale-100"
+                      }`}
+                    />
+                  </a>
+                ) : (
+                  <img
+                    src={project.image || "/placeholder.svg"}
+                    alt={project.title}
+                    className={`w-full h-full object-cover transition-transform duration-700 ${
+                      hoveredId === project.id ? "scale-105" : "scale-100"
+                    }`}
+                  />
+                )}
                 <div
-                  className="absolute inset-0 bg-primary origin-top"
+                  className="absolute inset-0 bg-primary origin-top pointer-events-none"
                   style={{
                     transform: revealedImages.has(project.id) ? "scaleY(0)" : "scaleY(1)",
                     transition: "transform 1.5s cubic-bezier(0.76, 0, 0.24, 1)",

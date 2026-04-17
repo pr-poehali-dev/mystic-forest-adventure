@@ -44,13 +44,13 @@ export function Footer() {
             <h4 className="text-sm font-medium mb-4">Связаться</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
-                <a href="https://t.me/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
+                <a href="https://t.me/Offerri" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
                   <Icon name="Send" size={14} />
                   Telegram
                 </a>
               </li>
               <li>
-                <a href="https://vk.com/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
+                <a href="https://vk.com/forrewoll" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
                   <Icon name="Users" size={14} />
                   ВКонтакте
                 </a>

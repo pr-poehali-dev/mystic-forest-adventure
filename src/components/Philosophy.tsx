@@ -61,8 +61,8 @@ export function Philosophy() {
 
             <div className="relative hidden lg:block">
               <img
-                src="/images/exterior.png"
-                alt="Декоратор за работой"
+                src="https://cdn.poehali.dev/projects/532e329d-334e-43dc-8293-783ede525737/bucket/7f447326-0e7d-4894-b658-efd80bc37322.png"
+                alt="Свадебный декор — цветочные арки"
                 className="opacity-90 relative z-10 w-auto"
               />
             </div>
@@ -70,7 +70,7 @@ export function Philosophy() {
 
           <div className="space-y-6 lg:pt-48">
             <p className="text-muted-foreground text-lg leading-relaxed max-w-md mb-12">
-              Гильдия декораторов — команда профессионалов с многолетним опытом оформления мероприятий. Мы создаём пространства, которые вызывают эмоции и остаются в памяти.
+              Гильдия декораторов — команда профессионалов с пятилетним опытом оформления мероприятий. Мы создаём пространства, которые вызывают эмоции и остаются в памяти.
             </p>
 
             {philosophyItems.map((item, index) => (

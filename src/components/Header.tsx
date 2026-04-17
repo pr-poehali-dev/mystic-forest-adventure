@@ -49,7 +49,7 @@ export function Header() {
             Услуги
           </a>
           <a
-            href="https://t.me/"
+            href="https://t.me/Offerri"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-orange-200 transition-colors duration-300"
@@ -58,7 +58,7 @@ export function Header() {
             <Icon name="Send" size={18} />
           </a>
           <a
-            href="https://vk.com/"
+            href="https://vk.com/forrewoll"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-orange-200 transition-colors duration-300"
@@ -124,10 +124,10 @@ export function Header() {
           </ul>
 
           <div className="flex gap-6 mb-8">
-            <a href="https://t.me/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-200 transition-colors" onClick={closeMobileMenu}>
+            <a href="https://t.me/Offerri" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-200 transition-colors" onClick={closeMobileMenu}>
               <Icon name="Send" size={22} />
             </a>
-            <a href="https://vk.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-200 transition-colors" onClick={closeMobileMenu}>
+            <a href="https://vk.com/forrewoll" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-200 transition-colors" onClick={closeMobileMenu}>
               <Icon name="Users" size={22} />
             </a>
             <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-200 transition-colors" onClick={closeMobileMenu}>
