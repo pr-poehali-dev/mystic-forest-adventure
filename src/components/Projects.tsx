@@ -8,7 +8,7 @@ const projects = [
     category: "Корпоративное мероприятие",
     location: "Нижний Новгород",
     year: "2026",
-    image: "/images/hously-1.png",
+    image: "https://cdn.poehali.dev/projects/532e329d-334e-43dc-8293-783ede525737/bucket/15d887ce-5bd5-4056-b336-ce18ef93ef00.png",
     link: "https://www.youtube.com/watch?v=p3noZvpbS14&t=74s",
   },
   {
