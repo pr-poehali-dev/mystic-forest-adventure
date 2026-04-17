@@ -109,6 +109,7 @@ export function Header() {
               { label: "О нас", href: "#about" },
               { label: "Портфолио", href: "#projects" },
               { label: "Услуги", href: "#services" },
+              { label: "Цены", href: "#pricing" },
               { label: "Вопросы", href: "#faq" },
             ].map((item) => (
               <li key={item.label}>
