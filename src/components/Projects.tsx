@@ -26,8 +26,8 @@ const projects = [
     category: "Образовательный форум",
     location: "Нижний Новгород",
     year: "2025",
-    image: "/images/hously-3.png",
-    link: "https://vk.com/p_berega",
+    image: "https://cdn.poehali.dev/projects/532e329d-334e-43dc-8293-783ede525737/bucket/bdf8e205-fef4-4772-9547-16fd3a3ff346.jpg",
+    link: "https://vk.com/album-76077281_308991370",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const projects = [
     category: "Оформление",
     location: "Нижний Новгород",
     year: "2026",
-    image: "/images/hously-4.png",
+    image: "https://cdn.poehali.dev/projects/532e329d-334e-43dc-8293-783ede525737/bucket/0a87a147-3d11-41df-95eb-fba3dba00bb9.jpg",
     link: null,
   },
 ]
@@ -123,7 +123,13 @@ export function Projects() {
 
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <h3 className="text-xl font-medium mb-2 group-hover:underline underline-offset-4">{project.title}</h3>
+                  {project.link ? (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <h3 className="text-xl font-medium mb-2 hover:underline underline-offset-4">{project.title}</h3>
+                    </a>
+                  ) : (
+                    <h3 className="text-xl font-medium mb-2 group-hover:underline underline-offset-4">{project.title}</h3>
+                  )}
                   <p className="text-muted-foreground text-sm">
                     {project.category} · {project.location}
                   </p>
