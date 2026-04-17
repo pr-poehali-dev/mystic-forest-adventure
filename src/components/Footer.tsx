@@ -1,25 +1,25 @@
+import Icon from "@/components/ui/icon"
+
 export function Footer() {
   return (
     <footer className="py-16 md:py-24 border-t border-border">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-4 gap-12 mb-16">
-          {/* Brand */}
           <div className="md:col-span-2">
             <a href="/" className="inline-block mb-6">
-              <img src="/images/hously-logo.svg" alt="Пространство" width={120} height={32} className="w-auto h-6" />
+              <span className="text-foreground font-semibold text-xl tracking-wide">Гильдия декораторов</span>
             </a>
             <p className="text-muted-foreground leading-relaxed max-w-sm">
-              Создаем пространства для жизни. Архитектурный опыт, где форма, свет и намерение встречаются.
+              Студия декора мероприятий. Корпоративные события, образовательные форумы, съёмки и свадебный декор.
             </p>
           </div>
 
-          {/* Navigation */}
           <div>
-            <h4 className="text-sm font-medium mb-4">Студия</h4>
+            <h4 className="text-sm font-medium mb-4">Разделы</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
                 <a href="#projects" className="hover:text-foreground transition-colors">
-                  Проекты
+                  Портфолио
                 </a>
               </li>
               <li>
@@ -33,50 +33,43 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-foreground transition-colors">
-                  Контакты
+                <a href="#faq" className="hover:text-foreground transition-colors">
+                  Вопросы
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
-            <h4 className="text-sm font-medium mb-4">Связь</h4>
+            <h4 className="text-sm font-medium mb-4">Связаться</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
-                <a href="mailto:hello@prostranstvo.ru" className="hover:text-foreground transition-colors">
-                  hello@prostranstvo.ru
+                <a href="https://t.me/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
+                  <Icon name="Send" size={14} />
+                  Telegram
                 </a>
               </li>
               <li>
-                <a href="tel:+74951234567" className="hover:text-foreground transition-colors">
-                  +7 (495) 123-45-67
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Телеграм
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
+                <a href="https://vk.com/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
+                  <Icon name="Users" size={14} />
                   ВКонтакте
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
+                  <Icon name="MessageCircle" size={14} />
+                  WhatsApp
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>© 2025 Пространство. Все права защищены.</p>
+          <p>© 2025 Гильдия декораторов. Все права защищены.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-foreground transition-colors">
               Политика конфиденциальности
-            </a>
-            <a href="#" className="hover:text-foreground transition-colors">
-              Условия использования
             </a>
           </div>
         </div>

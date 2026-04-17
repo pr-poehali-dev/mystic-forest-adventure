@@ -1,5 +1,6 @@
 import { useState, useEffect, MouseEvent } from "react"
 import { cn } from "../lib/utils"
+import Icon from "@/components/ui/icon"
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false)
@@ -32,40 +33,49 @@ export function Header() {
       )}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between md:px-[24]">
+        <a href="#projects" className="flex items-center gap-2 group">
+          <span className="text-white font-medium text-sm tracking-[0.15em] uppercase">Портфолио</span>
+        </a>
+
         <a href="/" className="flex items-center gap-2 group" onClick={scrollToTop}>
-          <img src="/images/hously-logo.svg" alt="Пространство" width={120} height={32} className="w-auto h-6" />
+          <span className="text-white font-semibold text-lg tracking-wide">Гильдия декораторов</span>
         </a>
 
-        <ul className="hidden md:flex items-center gap-10 text-sm tracking-wide">
-          {[
-            { label: "Главная", href: "#hero" },
-            { label: "Философия", href: "#about" },
-            { label: "Проекты", href: "#projects" },
-            { label: "Услуги", href: "#services" },
-            { label: "Вопросы", href: "#faq" },
-          ].map((item) => (
-            <li key={item.label}>
-              <a
-                href={item.href}
-                className="hover:text-[rgb(251,146,60)] transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 hover:after:w-full after:bg-[rgb(251,146,60)] after:transition-all after:duration-300 text-white"
-              >
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-
-        <a
-          href="#contact"
-          className={cn(
-            "hidden md:inline-flex items-center gap-2 text-sm px-5 py-2.5 transition-all duration-300",
-            scrolled
-              ? "bg-white text-foreground border border-foreground/20 hover:bg-foreground hover:text-white"
-              : "bg-white text-foreground border border-foreground/20 hover:bg-foreground hover:text-white",
-          )}
-        >
-          Связаться
-        </a>
+        <div className="hidden md:flex items-center gap-6">
+          <a
+            href="#services"
+            className="text-white text-sm tracking-wide hover:text-orange-200 transition-colors duration-300"
+          >
+            Услуги
+          </a>
+          <a
+            href="https://t.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-orange-200 transition-colors duration-300"
+            aria-label="Telegram"
+          >
+            <Icon name="Send" size={18} />
+          </a>
+          <a
+            href="https://vk.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-orange-200 transition-colors duration-300"
+            aria-label="ВКонтакте"
+          >
+            <Icon name="Users" size={18} />
+          </a>
+          <a
+            href="https://wa.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-orange-200 transition-colors duration-300"
+            aria-label="WhatsApp"
+          >
+            <Icon name="MessageCircle" size={18} />
+          </a>
+        </div>
 
         <button
           className="md:hidden z-50 transition-colors duration-300 text-white"
@@ -96,8 +106,8 @@ export function Header() {
           <ul className="flex flex-col gap-6 mb-8">
             {[
               { label: "Главная", href: "#hero" },
-              { label: "Философия", href: "#about" },
-              { label: "Проекты", href: "#projects" },
+              { label: "О нас", href: "#about" },
+              { label: "Портфолио", href: "#projects" },
               { label: "Услуги", href: "#services" },
               { label: "Вопросы", href: "#faq" },
             ].map((item) => (
@@ -112,6 +122,18 @@ export function Header() {
               </li>
             ))}
           </ul>
+
+          <div className="flex gap-6 mb-8">
+            <a href="https://t.me/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-200 transition-colors" onClick={closeMobileMenu}>
+              <Icon name="Send" size={22} />
+            </a>
+            <a href="https://vk.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-200 transition-colors" onClick={closeMobileMenu}>
+              <Icon name="Users" size={22} />
+            </a>
+            <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-200 transition-colors" onClick={closeMobileMenu}>
+              <Icon name="MessageCircle" size={22} />
+            </a>
+          </div>
 
           <a
             href="#contact"

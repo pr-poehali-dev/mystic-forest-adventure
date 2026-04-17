@@ -3,23 +3,23 @@ import { HighlightedText } from "./HighlightedText"
 
 const philosophyItems = [
   {
-    title: "Минимализм со смыслом",
+    title: "Каждая деталь имеет значение",
     description:
-      "Каждый элемент имеет свое назначение и пространство для дыхания. Мы убираем лишнее, чтобы раскрыть то, что действительно важно.",
+      "Мы верим, что настоящий декор — это не просто красиво расставленные предметы. Это продуманная история, в которой каждый элемент говорит на одном языке.",
   },
   {
-    title: "Архитектурный подход",
+    title: "Индивидуальный подход",
     description:
-      "Планировки, вдохновленные структурой, ритмом и материальностью. Здания, которые говорят через пропорции и свет.",
+      "Нет двух одинаковых мероприятий. Мы глубоко погружаемся в запрос клиента, чтобы создать декор, который отражает именно вашу идею и характер.",
   },
   {
-    title: "Естественная динамика",
+    title: "Эстетика и функциональность",
     description:
-      "Движение поддерживает восприятие, но никогда не отвлекает. Анимация, которая ощущается естественно, как свет, скользящий по комнате.",
+      "Красивое пространство должно быть удобным. Мы создаём декор, который восхищает взгляд и при этом учитывает логику мероприятия.",
   },
   {
-    title: "Вневременная эстетика",
-    description: "Элегантный, спокойный и долговечный визуальный язык. Дизайн, который превосходит тренды и стареет с достоинством.",
+    title: "Работаем на результат",
+    description: "Наша цель — чтобы гости вашего мероприятия почувствовали магию с первого взгляда и запомнили этот день надолго.",
   },
 ]
 
@@ -51,28 +51,26 @@ export function Philosophy() {
     <section id="about" className="py-32 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
-          {/* Left column - Title and image */}
           <div className="lg:sticky lg:top-32 lg:self-start">
-            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наша философия</p>
+            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">О нас</p>
             <h2 className="text-6xl md:text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-              Дизайн с
+              Декор с
               <br />
-              <HighlightedText>намерением</HighlightedText>
+              <HighlightedText>душой</HighlightedText>
             </h2>
 
             <div className="relative hidden lg:block">
               <img
                 src="/images/exterior.png"
-                alt="Архитектурный эскиз рабочего пространства"
+                alt="Декоратор за работой"
                 className="opacity-90 relative z-10 w-auto"
               />
             </div>
           </div>
 
-          {/* Right column - Description and Philosophy items */}
           <div className="space-y-6 lg:pt-48">
             <p className="text-muted-foreground text-lg leading-relaxed max-w-md mb-12">
-              Архитектура - это больше, чем конструкция. Это то, как мы воспринимаем мир. Мы создаем пространства, которые питают человеческий дух.
+              Гильдия декораторов — команда профессионалов с многолетним опытом оформления мероприятий. Мы создаём пространства, которые вызывают эмоции и остаются в памяти.
             </p>
 
             {philosophyItems.map((item, index) => (
