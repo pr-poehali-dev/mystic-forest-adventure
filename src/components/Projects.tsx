@@ -12,11 +12,11 @@ const projects = [
   },
   {
     id: 2,
-    title: "Свадьба Елены и Максима",
-    category: "Свадебный декор",
-    location: "Подмосковье",
-    year: "2024",
-    image: "/images/hously-2.png",
+    title: "Съёмки рекламы Теле 2",
+    category: "Съёмка",
+    location: "Москва",
+    year: "2025",
+    image: "https://cdn.poehali.dev/projects/532e329d-334e-43dc-8293-783ede525737/bucket/e9f0b4c3-17fc-4aea-870c-8f280dfd2718.png",
   },
   {
     id: 3,
