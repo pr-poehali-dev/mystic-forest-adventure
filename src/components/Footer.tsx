@@ -61,6 +61,12 @@ export function Footer() {
                   WhatsApp
                 </a>
               </li>
+              <li>
+                <a href="mailto:oleg.maksimovich.1996@mail.ru" className="hover:text-foreground transition-colors flex items-center gap-2">
+                  <Icon name="Mail" size={14} />
+                  oleg.maksimovich.1996@mail.ru
+                </a>
+              </li>
             </ul>
           </div>
         </div>
