@@ -13,12 +13,12 @@ const projects = [
   },
   {
     id: 2,
-    title: "Съёмки рекламы Теле 2",
+    title: 'Съёмки выпуска "ВК Под шубой" 4',
     category: "Съёмка",
     location: "Москва",
     year: "2025",
     image: "https://cdn.poehali.dev/projects/532e329d-334e-43dc-8293-783ede525737/bucket/e9f0b4c3-17fc-4aea-870c-8f280dfd2718.png",
-    link: null,
+    link: "https://vk.com/video-220754053_456244914",
   },
   {
     id: 3,
@@ -37,6 +37,15 @@ const projects = [
     year: "2026",
     image: "https://cdn.poehali.dev/projects/532e329d-334e-43dc-8293-783ede525737/bucket/0a87a147-3d11-41df-95eb-fba3dba00bb9.jpg",
     link: null,
+  },
+  {
+    id: 5,
+    title: "Форум Студенческих Сообществ. Нижний Новгород, лагерь Спутник. 2025",
+    category: "Форум",
+    location: "Нижний Новгород",
+    year: "2025",
+    image: "/карт 1.jpg",
+    link: "https://vk.com/fss_dnk",
   },
 ]
 
