@@ -44,7 +44,7 @@ const projects = [
     category: "Форум",
     location: "Нижний Новгород",
     year: "2025",
-    image: "/карт 1.jpg",
+    image: "https://cdn.poehali.dev/projects/532e329d-334e-43dc-8293-783ede525737/bucket/2369dd6a-f2c1-4dc8-8391-713ab7b39c5f.jpg",
     link: "https://vk.com/fss_dnk",
   },
 ]
